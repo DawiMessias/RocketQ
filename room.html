@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/global.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Perguntas e respostas - Roquet.q</title>
 </head>
@@ -35,18 +35,43 @@
             <section id="question-form">
                 <h2>Faça sua pergunta</h2>
                 <form action="">
-                    <label for="sr-only" for-id="question">O que você gostaria de perguntar</label>
-                    <textarea name="question" id="question" placeholder="O que você gostaria de perguntar"></textarea>
+                    <label class="sr-only" for-id="question">O que você gostaria de perguntar ?</label>
+                    <textarea name="question" id="question" placeholder="O que você gostaria de perguntar ?"></textarea>
 
                     <footer>
                         <div>
-                            <img src="" alt="">
+                            <img src="/Assets/lock_black_24dp 1.svg" alt="Cadeado">
                             Esta pergunta é anônima!
                         </div>
                         <button>Enviar</button>
                     </footer>
-
                 </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+                <div class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/Assets/Avatar.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença entre const, var e let no Javascript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="/Assets/check 1.svg" alt="Marcar como lido">
+                                Marcar como lido
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="Assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 

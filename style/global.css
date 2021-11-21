@@ -14,7 +14,7 @@ html {
     --blue: #3485FF;
     --background: #f6faff;
     --overlay: #040911;
-    --iconsDetails: #A5B0C1;
+    --icons-details: #A5B0C1;
 
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
@@ -93,10 +93,6 @@ button.outlined,
     border: .2rem solid var(--blue);
 }
 
-input, button, .button {
-    width: 100%;
-    margin-bottom: 1.8rem;
-}
 
 .content header {
     width: 80%;
