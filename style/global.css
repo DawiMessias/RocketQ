@@ -18,7 +18,7 @@ html {
 
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
-    --grey-medium: #D3D9E2;
+    --grey-medium: #EAECF2;
     --grey-light: #E5EAF1;
 
     --hover-blue: #5699FF;
@@ -80,7 +80,7 @@ button:hover, .button:hover {
     filter: brightness(1.2);
 }
 
-button > img
+button > img,
 .button > img {
     margin-right: 1rem;
     width: 2rem;
