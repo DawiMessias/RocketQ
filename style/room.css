@@ -106,13 +106,17 @@
 
 .question-wrapper .question-content p {
     margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
 }
 
 .question-wrapper .actions { 
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
+} 
 
 .question-wrapper .actions > a {
     display: flex;
