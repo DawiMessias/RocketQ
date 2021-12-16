@@ -21,7 +21,7 @@ main {
     grid-area: right;
     display: flex;
     align-items: center;
-    margin-top: -15rem;
+    margin-top: -12rem;
 }
 
 main .container {
@@ -30,20 +30,15 @@ main .container {
 
 main h2 {
     font-family: 'Poppins', sans-serif;
-    color: var(black);
-    font-size: 2.8rem;
-    margin-bottom: clamp(20px, 5vw, 2.8rem);
-    font-weight: 700px
-}
-
-input, button .button{
-    height: 5rem;
-    border-radius: .8rem;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
 }
 
 input {
     border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem;
+    outline: none;
 }
 
 .separator {
@@ -63,7 +58,7 @@ input {
     color: var(--grey-blue);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    padding:  1.35rem;
+    padding:  0 1.35rem;
     line-height: 0;
 }
 
@@ -76,14 +71,14 @@ input {
     opacity: 0.1;
 }
 
- .top {
+.ball.top {
     top: -46rem;
     width: 63.3rem;
     right: -35rem;
     height: 63.3rem;
 }
 
-.bottom {
+.ball.bottom {
     bottom: -15rem;
     right: 5.6rem;
 }
