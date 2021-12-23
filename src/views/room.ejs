@@ -10,6 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer type="module"></script>
 
     <title>Perguntas e respostas - Roquet.q</title>
 </head>
@@ -17,17 +18,17 @@
     <div id="room" class="content">
         <header>
             <a href="#">
-                <img src="/Assets/Logo.svg" alt="Logo da Roquet.q">
+                <img src="/images/Logo.svg" alt="Logo da Roquet.q">
             </a>
 
             <div class="buttons">
                 <div class="button outlined">
                     #32343
-                    <img src="/Assets/copy.svg" alt="Copiar número da sala">
+                    <img src="/images/copy.svg" alt="Copiar número da sala">
                 </div>
 
                 <a href="#" class="button">
-                    <img src="/Assets/users-white.svg" alt="Criar uma sala"> Criar Sala
+                    <img src="/images/users-white.svg" alt="Criar uma sala"> Criar Sala
                 </a>
             </div>
         </header>
@@ -41,7 +42,7 @@
 
                     <footer>
                         <div>
-                            <img src="/Assets/lock_black_24dp 1.svg" alt="Cadeado">
+                            <img src="/images/lock_black_24dp 1.svg" alt="Cadeado">
                             Esta pergunta é anônima!
                         </div>
                         <button>Enviar</button>
@@ -55,7 +56,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/Assets/Avatar-blue.svg" alt="avatar">
+                                <img src="/images/Avatar-blue.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, var e let no Javascript?</p>
@@ -63,11 +64,11 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="/Assets/check 1.svg" alt="Marcar como lido">
+                                <img src="/images/check 1.svg" alt="Marcar como lido">
                                 Marcar como lido
                             </a>
                             <a href="#" class="delete">
-                                <img src="Assets/trash.svg" alt="Excluir">
+                                <img src="images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -77,7 +78,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/Assets/Avatar-blue.svg" alt="avatar">
+                                <img src="/images/Avatar-blue.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>O que é Typescript?</p>
@@ -85,11 +86,11 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="/Assets/check 1.svg" alt="Marcar como lido">
+                                <img src="/images/check 1.svg" alt="Marcar como lido">
                                 Marcar como lido
                             </a>
                             <a href="#" class="delete">
-                                <img src="Assets/trash.svg" alt="Excluir">
+                                <img src="images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -99,7 +100,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/Assets/Avatar-blue.svg" alt="avatar">
+                                <img src="/images/Avatar-blue.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>O que é Typescript?</p>
@@ -107,11 +108,11 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="check">
-                                <img src="/Assets/check 1.svg" alt="Marcar como lido">
+                                <img src="/images/check 1.svg" alt="Marcar como lido">
                                 Marcar como lido
                             </a>
                             <a href="#" class="delete">
-                                <img src="Assets/trash.svg" alt="Excluir">
+                                <img src="images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
                         </div>
@@ -120,7 +121,7 @@
                     <div class="question-wrapper read">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/Assets/Avatar-white.svg" alt="avatar">
+                                <img src="/images/Avatar-white.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>O que é Javascript?</p>
@@ -128,7 +129,7 @@
                         </div>
                         <div class="actions">
                             <a href="#" class="delete">
-                                <img src="/Assets/check 1.svg" alt="Pergunta lida">
+                                <img src="/images/check 1.svg" alt="Pergunta lida">
                                 Pergunta lida!
                             </a>
                         </div>
@@ -139,7 +140,7 @@
         </main>
     </div>
 
-    <div class="modal-wrapper ">
+    <div class="modal-wrapper">
         <div class="modal">
             <h2>Excluir Pergunta</h2>
             <p>Tem certeza que você deseja excluir essa perguntar?</p>
@@ -149,7 +150,7 @@
                 <input type="password" id="password" name="password" placeholder="Digite sua senha">
             
                 <div class="buttons">
-                    <div class="button grey">Cancelar</div>
+                    <div class="button grey cancel">Cancelar</div>
                     <button class="red">Sim, excluir</button>
                 </div>
             </form>
