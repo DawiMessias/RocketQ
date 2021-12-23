@@ -1,15 +1,18 @@
 {
   "name": "liftoff-",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/server.js",
   "repository": "https://github.com/DawiMessias/liftoff-.git",
   "author": "DawiMessias <wtih123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn src/server.js"
+    "start": "nodemon ."
   },
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
