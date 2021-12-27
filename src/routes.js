@@ -1,12 +1,11 @@
 const express = require("express")
 const routes = express.Router()
 const questionController  = require("./controllers/questionController")
-routes.get("/", (req, res) => res.render("index"))
+const roomController = require("./controllers/roomController")
+routes.get("/", (req, res) => res.render("index", {page: "enter-room"}))
+routes.get("/create-pass", (req, res) => res.render("index", {page: "create-pass"}))
+routes.get("/room/:roomId", (req, res)  => res.render("room"))
 
-routes.get("/room", (req, res)  => res.render("room"))
-
-routes.get("/create-pass", (req, res) => res.render("create-pass"))
-
-routes.get("/room/:room/:question/:action", (req, res) => questionController )
-
+routes.post("/question/:room/:question/:action", questionController.index)
+routes.post("/create-room", roomController.create)
 module.exports = routes
