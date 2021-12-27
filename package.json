@@ -6,7 +6,8 @@
   "author": "DawiMessias <wtih123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "initDb": "node ./src/db/init.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
