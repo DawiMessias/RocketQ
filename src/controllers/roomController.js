@@ -33,8 +33,11 @@ module.exports = {
         res.redirect(`/room/${roomId}`)
     },
 
-    open(req, res) {
+    async open(req, res) {
+        const db = await DataBase()
         const roomId = req.params.roomId
-        res.render("room", {roomId: roomId})
+        const question = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 0`)
+        const questionRead = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 1`)
+        res.render("room", {roomId: roomId, questions: question, questionsRead: questionRead})
     }
 }
