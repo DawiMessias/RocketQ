@@ -4,7 +4,7 @@ module.exports = {
     async create(req, res) {
         const db = await DataBase()
         const pass = req.body.password
-        let roomId = 0
+        let roomId
         let isRoom = true
         while(isRoom) {
             for( var i = 0; i < 6; i++) {
@@ -17,13 +17,13 @@ module.exports = {
     
             isRoom = dbRoomsId.some(dbRoomsId => dbRoomsId === roomId)
     
-            if (!dbRoomsId) {
+            if (!isRoom) {
                 await db.run(`INSERT INTO rooms (
                     id,
                     pass
                 ) VALUES (
                     ${parseInt(roomId)},
-                    ${pass}
+                    "${pass}"
                 )`)
             } 
         }
@@ -38,6 +38,18 @@ module.exports = {
         const roomId = req.params.roomId
         const question = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 0`)
         const questionRead = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 1`)
-        res.render("room", {roomId: roomId, questions: question, questionsRead: questionRead})
+        let isNoQuestion
+
+        if(question.length == 0 && questionRead.length == 0) {
+            isNoQuestion = true
+        } 
+       
+
+        res.render("room", {roomId: roomId, questions: question, questionsRead: questionRead, isNoQuestion: isNoQuestion})
+    },
+
+    enter(req, res) {
+        const roomId = req.body.roomId
+        res.redirect(`/room/${roomId}`)
     }
 }
